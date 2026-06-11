@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: #131313e5;
+  padding: 8px 48px;
+  display: flex;
+  gap: 48px;
+}
+nav {
+  display: none;
+}
+
+.logo {
+  font-size: 2rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  font-style: medium;
+  line-height: 42px;
+  letter-spacing: 3.2px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #e5e2e1;
+}
+
+.red-button {
+  background-color: #8b0000;
+  padding: 12px;
+  width: 100%;
+  border: 0;
+  border-radius: 4px;
+  opacity: 80%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 16px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #ff907f;
+}
+
+.hero-section {
+  background-color: #e3beb8;
+  /* min-height: 85vh; */
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-image: url("./image.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+section {
+  padding: 72px 32px;
+}
+h1 {
+  font-family: Playfair Display;
+  font-weight: 700;
+  font-size: 3rem;
+  letter-spacing: -1.28px;
+  line-height: 72px;
+  text-align: center;
+  color: #e5e2e1;
+}
+
+.details {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: center;
+  font-weight: 400px;
+  color: #E3BEB8;
+}
+.hero-button {
+  border-radius: 12px;
+  padding: 16px 32px;
+  width: fit-content;
+}
+
+.button-container {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  align-items: center;
+}
+.button-container button:nth-child(2) {
+  background-color:transparent;
+  color: #E4E4CC;
+  border:1px solid #E4E4CC;
+}
+@media (min-width: 768px) {
+  nav {
+    display: flex;
+    gap: 32px;
+  }
+  nav a {
+    color: #e3beb8;
+    text-decoration: none;
+  }
+  .red-button {
+    width: fit-content;
+  }
+  header {
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 88px;
+  }
+  .hero-section{
+    height: 85vh;
+    justify-content: center;
+  }
+  .button-container{
+    flex-direction: row;
+    justify-content: center;
+  }
+  .details{
+    font-size: 1.1rem;
+
+  }
+}
+@media(min-width:1024px){
+  h1{
+    font-size: 4rem;
+    width: 65%;
+  }
+  section{
+    padding: 80px;
+  }
+  .details{
+    width: 50%;
+  }
+.hero-section{
+  align-items: center;
+  height: 93vh;
+}  
+}
