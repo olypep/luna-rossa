@@ -52,8 +52,74 @@ nav {
   background-repeat: no-repeat;
 }
 
-section {
-  padding: 72px 32px;
+.sign {
+  color: #ffb4a8;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.featured-dish {
+  background-color: black;
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.featured-dish .header {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 56px;
+  color: white;
+  margin-bottom: 64px;
+}
+.dish-holder {
+  background-color: #20201f;
+  padding: 24px 24px;
+}
+.dish-container{
+  width:292px;
+  margin-bottom:24px;
+}
+
+.parent-container{
+  display: flex;
+  flex-direction: column; ;
+  align-items: center;
+} 
+
+.title {
+  display: flex;
+  /* gap: 8px; */
+  justify-content: space-between;
+  align-content: space-between;
+}
+.title .foodname {
+  color: white;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: left;
+  line-height: 32px;
+  font-family: "Playfair Display", serif;
+}
+
+.dish-holder .desc {
+  color: #e3beb8;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+  margin-top: 8px;
+}
+
+.title .price {
+  color: #ffb4a8;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Montserrat", sans-serif;
 }
 h1 {
   font-family: Playfair Display;
@@ -72,7 +138,7 @@ h1 {
   letter-spacing: 0px;
   text-align: center;
   font-weight: 400px;
-  color: #E3BEB8;
+  color: #e3beb8;
 }
 .hero-button {
   border-radius: 12px;
@@ -87,10 +153,9 @@ h1 {
   align-items: center;
 }
 .button-container button:nth-child(2) {
-  background-color:transparent;
-  color: #E4E4CC;
-  border:1px solid #E4E4CC;
-
+  background-color: transparent;
+  color: #e4e4cc;
+  border: 1px solid #e4e4cc;
 }
 @media (min-width: 768px) {
   nav {
@@ -109,32 +174,31 @@ h1 {
     align-items: center;
     padding-inline: 88px;
   }
-  .hero-section{
+  .hero-section {
     height: 85vh;
     justify-content: center;
   }
-  .button-container{
+  .button-container {
     flex-direction: row;
     justify-content: center;
   }
-  .details{
+  .details {
     font-size: 1.1rem;
-
   }
 }
-@media(min-width:1024px){
-  h1{
+@media (min-width: 1024px) {
+  h1 {
     font-size: 4rem;
     width: 65%;
   }
-  section{
+  section {
     padding: 80px;
   }
-  .details{
+  .details {
     width: 50%;
   }
-.hero-section{
-  align-items: center;
-  height: 93vh;
-}  
+  .hero-section {
+    align-items: center;
+    height: 93vh;
+  }
 }
